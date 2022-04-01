@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/gif" href="image/logo.gif">
+	<title>Digital Network</title>
+<style type="text/css">
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#header-box{
+	background-color: green;
+	height: 50px;
+	width: 100vw;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}	
+#web-logo{
+	width: 33px;
+	height: 33px;
+	position: fixed;
+	top: 8.5px;
+	left: 15px;
+}
+#web-name{
+	color: white;
+	width: 170px;
+	font-size: 26px;
+	position: fixed;
+	top: 11px;
+	left: 52px;
+}
+#search-main-box{
+	display: inline-block;
+	height: 31px;
+	position: fixed;
+	top: 10px;
+	left: 235px;
+}
+#search-box{
+	font-size: 20px;
+	padding: 2px 5px;
+	border: 1px solid blue;
+	outline: 1px solid white;
+	position: relative;
+	top: -9px;
+}
+#search-btn{
+	background-color: blue;
+	border: 1px solid white;
+	height: 29px;
+	position: relative;
+	left: -3px;
+}
+#heading-item-box{
+	display: inline-block;
+	height: 31px;
+	position: fixed;
+	top: 10px;
+	right: 15px;
+}
+#search-btn-opener{
+	visibility: hidden;
+}
+.header-item{
+	background-color: white;
+	height: 29px;
+	width: 29px;
+	border: 1px solid red;
+	border-radius: 50%;
+	margin: 0px 5px;
+}
+@media only screen and (max-width: 855px) {
+  .header-item{
+  	margin: 0px;
+  }
+}
+@media only screen and (max-width: 785px) {
+  #search-box{
+  	width: 30vw;
+  }
+}
+@media only screen and (max-width: 770px) {
+  #search-box{
+  	width: 20vw;
+  }
+}
+@media only screen and (max-width: 680px) {
+ #search-main-box{
+ 	visibility: hidden;
+ 	left: 53px;
+  }
+  #search-box{
+  	width: 28vw;
+  }
+  #search-btn-opener{
+ 	visibility: visible;
+  }
+}
+@media only screen and (max-width: 550px) {
+ #search-main-box{
+ 	left: 53px;
+  }
+  #search-box{
+  	width: 28vw;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .not-show{
+  	display: none;
+  }
+  #search-main-box{
+ 	left: 52px;
+  }
+  #search-box{
+  	width: 50vw;
+  }
+  #web-name{
+  	font-size: 25px;
+  	left: 51px;
+  }
+}
+
+</style>
+</head>
+<body>
+	<header id="header-box">
+		<img src="image/logo.gif" id="web-logo">
+		<label id="web-name">Digital Network</label>
+		<div id="search-main-box">
+			<input type="text" id="search-box">
+			<img src="icon/search.png" id="search-btn">
+		</div>
+		<div id="heading-item-box">
+			<img src="icon/search1.png" title="" class="header-item" id="search-btn-opener">
+			<img src="icon/home.png" title="" class="header-item not-show" id="home-btn">
+			<img src="icon/tv.jpg" title="" class="header-item not-show" id="video-btn">
+			<img src="icon/friend.png" title="" class="header-item not-show" id="friend-btn">
+			<img src="icon/notification.png" title="" class="header-item not-show" id="notification-btn">
+			<img src="icon/message.png" title="" class="header-item not-show" id="message-btn">
+			<img src="icon/user.png" title="" class="header-item not-show" id="account-btn">
+			<img src="icon/menu.png" title="" class="header-item" id="menu-btn">
+		</div>
+	</header>
+	<script type="text/javascript" src="javascript/jquery.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+
+
+		$("#search-btn-opener").click(function(){
+			$(this).css("visibility","hidden");
+			$("#search-main-box").css("visibility","visible");
+		});
+
+
+
+
+
+	});
+	</script>
+</body>
+</html>
